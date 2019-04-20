@@ -34,8 +34,8 @@ if ($err) {
 <?php echo $data['rajaongkir']['origin_details']['city_name'];?> ke <?php echo $data['rajaongkir']['destination_details']['city_name'];?> @<?php echo $berat;?>gram Kurir : <?php echo strtoupper($kurir); ?>
 <?php for ($k=0; $k < count($data['rajaongkir']['results']); $k++): ?>
 <div title="<?php echo strtoupper($data['rajaongkir']['results'][$k]['name']);?>" style="padding:10px">
-	<table class="table table-striped">
-		<tr>
+	<table class="table table-striped table-border table-hover">
+		<tr class="table-primary">
 			<th>No.</th>
 			<th>Jenis Layanan</th>
 			<th>ETD</th>
